@@ -1,14 +1,16 @@
 export const cv_data = {
 	name: {
-		first: 'ARNOB',
-		last: 'HASAN'
+		first: 'MD ARNOB HASAN',
+		last: 'JOY'
 	},
 	tag_line: 'Software Developer',
 	contact: {
 		phone: '+8801915-215080',
 		location: 'Dhaka, Bangladesh',
 		email: 'arnobhasanice@gmail.com',
-		github: 'Hasan36arnob'
+		github: 'Hasan36arnob',
+		linkedin: 'https://www.linkedin.com/in/md-arnob-hasan-joy-3643241ba/',
+		twitter: 'https://x.com/ArnobHasan5347'
 	},
 	education: [
 		{
@@ -126,4 +128,4 @@ export const cv_data = {
 	references: []
 };
 
-export const site_title = `${cv_data.name.first.toLowerCase()} ${cv_data.name.last.toLowerCase()} - ${cv_data.tag_line.toLowerCase()}`;
+export const site_title = 'arnob hasan - software developer';
