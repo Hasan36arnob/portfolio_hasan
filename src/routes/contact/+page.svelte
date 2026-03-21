@@ -41,9 +41,15 @@
 		<div class="flex flex-col gap-12">
 			<div>
 				<Heading size="md" tag="h2" class="mb-6">Connect</Heading>
-				<div class="flex gap-6">
+				<div class="flex gap-6 flex-wrap">
 					<a href="https://github.com/{cv_data.contact.github}" target="_blank" rel="noreferrer" class="text-4xl text-slate-400 hover:text-white transition-colors">
 						GitHub
+					</a>
+					<a href={cv_data.contact.linkedin} target="_blank" rel="noreferrer" class="text-4xl text-slate-400 hover:text-white transition-colors">
+						LinkedIn
+					</a>
+					<a href={cv_data.contact.twitter} target="_blank" rel="noreferrer" class="text-4xl text-slate-400 hover:text-white transition-colors">
+						X
 					</a>
 					<a href={cv_data.problem_solving.profiles.codeforces} target="_blank" rel="noreferrer" class="text-4xl text-slate-400 hover:text-white transition-colors">
 						Codeforces

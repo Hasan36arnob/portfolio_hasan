@@ -60,23 +60,27 @@
 			>
 				<IconGithub />
 			</a>
-			{#if isFilled.link(settings.data.linkedin_link)}
-				<PrismicLink
-					field={settings.data.linkedin_link}
+			{#if cv_data.contact.linkedin}
+				<a
+					href={cv_data.contact.linkedin}
+					target="_blank"
+					rel="noreferrer"
 					class="p-2 text-2xl text-slate-300 transform transition-all duration-150 hover:scale-125 hover:text-yellow-400"
 					aria-label={cv_data.name.first + ' ' + cv_data.name.last + ' on Linkedin'}
 				>
 					<IconLinkedin />
-				</PrismicLink>
+				</a>
 			{/if}
-			{#if isFilled.link(settings.data.twitter_link)}
-				<PrismicLink
-					field={settings.data.twitter_link}
+			{#if cv_data.contact.twitter}
+				<a
+					href={cv_data.contact.twitter}
+					target="_blank"
+					rel="noreferrer"
 					class="p-2 text-2xl text-slate-300 transform transition-all duration-150 hover:scale-125 hover:text-yellow-400"
 					aria-label={cv_data.name.first + ' ' + cv_data.name.last + ' on Twitter'}
 				>
 					<IconTwitter />
-				</PrismicLink>
+				</a>
 			{/if}
 		</div>
 	</div>
