@@ -5,6 +5,7 @@
 	import { PrismicPreview } from '@prismicio/svelte/kit';
 	import { page } from '$app/stores';
 	import { repositoryName } from '$lib/prismicio';
+	import { cv_data, site_title } from '$lib/cv_data';
 	import Footer from '$lib/components/Footer.svelte';
 	import Header from '$lib/components/Header.svelte';
 
@@ -12,7 +13,7 @@
 </script>
 
 <svelte:head>
-	<title>{$page.data.title}</title>
+	<title>{$page.data.title && $page.data.title !== site_title ? `${$page.data.title} | ${site_title}` : site_title}</title>
 	{#if $page.data.meta_description}
 		<meta name="description" content={$page.data.meta_description} />
 	{/if}

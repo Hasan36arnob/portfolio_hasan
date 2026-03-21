@@ -1,9 +1,9 @@
 export const cv_data = {
 	name: {
-		first: 'MD ARNOB HASAN',
-		last: 'JOY'
+		first: 'ARNOB',
+		last: 'HASAN'
 	},
-	tag_line: 'Web Developer & Data Analyst',
+	tag_line: 'Software Developer',
 	contact: {
 		phone: '+8801915-215080',
 		location: 'Dhaka, Bangladesh',
@@ -125,3 +125,5 @@ export const cv_data = {
 	},
 	references: []
 };
+
+export const site_title = `${cv_data.name.first.toLowerCase()} ${cv_data.name.last.toLowerCase()} - ${cv_data.tag_line.toLowerCase()}`;
